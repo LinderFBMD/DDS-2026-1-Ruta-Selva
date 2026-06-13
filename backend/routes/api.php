@@ -75,7 +75,7 @@ Route::middleware('auth:api')->group(function () { // AGREGUE SANCTUM EN VEZ DE 
         Route::patch('/{fotoId}/portada', [FotoController::class, 'setPortada']);
     });
 
-    // Asegúrate de que exista esta línea exacta en tu api.php
+   
     Route::get('/establecimientos/buscar', [EstablecimientoController::class, 'buscar']);
 
     // Tipos para el formulario de creación (Solo empresas autenticadas)
